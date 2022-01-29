@@ -26,8 +26,8 @@ function runGame(gameType) {
     // Math.random generates random numbers
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
-    let num1 = Math.floor(Math.random() * 3) + 1;
-    let num2 = Math.floor(Math.random() * 3) + 1;
+    let num1 = Math.floor(Math.random() * 6) + 1;
+    let num2 = Math.floor(Math.random() * 6) + 1;
     if (gameType === "addition") {
         displayAdditionQuestion(num1, num2);
     } else if (gameType === "multiply") {
