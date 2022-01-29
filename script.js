@@ -21,13 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function runGame(gameType) {
-    // Generate two random numbers between 1 and 25
+    // Generate two random numbers between 1 and 12
     // Math.floor rounds down to the whole number
     // Math.random generates random numbers
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
-    let num1 = Math.floor(Math.random() * 25) + 1;
-    let num2 = Math.floor(Math.random() * 25) + 1;
+    let num1 = Math.floor(Math.random() * 12) + 1;
+    let num2 = Math.floor(Math.random() * 12) + 1;
     if (gameType === "addition") {
         displayAdditionQuestion(num1, num2);
     } else if (gameType === "multiply") {
